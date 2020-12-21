@@ -134,7 +134,7 @@ function addHtml(member) {
         let data = "";
         if (role === "Engineer") {
             const gitHub = member.getGithub();
-            data = `<div class="col-6">
+            data = `<div class="col-4">
             <div class="card mx-auto mb-3 rounded custom-card" style="width: 18rem">
             <h5 class="card-header bg-primary text-white">${name}<br /><br /><i class="fas fa-mug-hot"></i> Engineer</h5>
             <ul class="list-group list-group-flush m-4">
@@ -146,7 +146,7 @@ function addHtml(member) {
         </div>`;
         } else if (role === "Intern") {
             const school = member.getSchool();
-            data = `<div class="col-6">
+            data = `<div class="col-4">
             <div class="card mx-auto mb-3 rounded custom-card" style="width: 18rem">
             <h5 class="card-header bg-primary text-white">${name}<br /><br /><i class="fas fa-glasses"></i> Intern</h5>
             <ul class="list-group list-group-flush m-4">
@@ -158,7 +158,7 @@ function addHtml(member) {
         </div>`;
         } else {
             const officePhone = member.getOfficeNumber();
-            data = `<div class="col-6">
+            data = `<div class="col-4">
             <div class="card mx-auto mb-3 rounded custom-card" style="width: 18rem">
             <h5 class="card-header bg-primary text-white">${name}<br /><br /><i class="fas fa-user-graduate"></i> Manager</h5>
             <ul class="list-group list-group-flush m-4">
